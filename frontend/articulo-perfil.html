@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElectroStore - Tienda de Electrónicos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header class="main-header" id="mainHeader">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo-area">
+                <a href="#" class="logo-img-link">
+                    <!-- Logo con imagen SVG mejorada (representando TechBuy) -->
+                    <img class="logo-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60'%3E%3Crect width='200' height='60' rx='12' fill='%231f3e48'/%3E%3Ctext x='18' y='38' font-family='Arial, sans-serif' font-weight='800' font-size='26' fill='%23f7f9fc'%3ETECH%3C/text%3E%3Ctext x='98' y='38' font-family='Arial' font-weight='700' font-size='26' fill='%236bc2e0'%3EBUY%3C/text%3E%3Ccircle cx='160' cy='30' r='10' fill='%23ffb347'/%3E%3Ctext x='154' y='35' font-size='14' fill='%23222' font-weight='bold'%3E⚡%3C/text%3E%3C/svg%3E"
+                            alt="TechBuy Logo">
+                </a>
+                <span class="logo-badge"><i class="fas fa-microchip"></i> COMPUTER & ELECTRONICS CENTER</span>
+            </div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Buscar productos...">
+            </div>
+            <div class="nav-links">
+                <a href="#"><i class="fas fa-user-circle"></i> Mi cuenta</a>
+                <a href="#" class="btn-outline-light"><i class="fas fa-tags"></i> OFERTAS</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <!-- BARRA INFERIOR DELGADA (5 opciones: inicio, catálogo, contáctenos, ofertas, políticas) 
+        Esta barra se queda fija arriba cuando el header principal desaparece. Es delgada y no estorba -->
+<div class="bottom-navbar" id="bottomNavbar">
+    <div class="nav-baja-container">
+        <!-- 1. Inicio -->
+        <div class="nav-baja-item">
+            <a href="#" class="nav-baja-link"><i class="fas fa-home"></i> Inicio</a>
+        </div>
+
+        <!-- 2. Catálogo (CON DROPDOWN - vista previa al pasar ratón) -->
+        <div class="nav-baja-item dropdown">
+            <a href="#" class="nav-baja-link">
+                <i class="fas fa-list-ul"></i> Catálogo
+                <i class="fas fa-chevron-down dropdown-arrow"></i>
+            </a>
+            <div class="dropdown-menu">
+                <a href="#"><i class="fas fa-laptop"></i> Laptops y PC</a>
+                <a href="#"><i class="fas fa-microchip"></i> Componentes</a>
+                <a href="#"><i class="fas fa-headphones"></i> Audio y Gaming</a>
+                <a href="#"><i class="fas fa-mobile-alt"></i> Smartphones</a>
+                <a href="#"><i class="fas fa-server"></i> Almacenamiento</a>
+            </div>
+        </div>
+
+        <!-- 3. Contáctenos -->
+        <div class="nav-baja-item">
+            <a href="#" class="nav-baja-link"><i class="fas fa-envelope"></i> Contáctenos</a>
+        </div>
+
+        <!-- 4. Ofertas (sin dropdown, solo destacado) -->
+        <div class="nav-baja-item">
+            <a href="#" class="nav-baja-link ofertas-link"><i class="fas fa-percent"></i> Ofertas</a>
+        </div>
+
+        <!-- 5. Políticas (CON DROPDOWN: Términos y condiciones + Condiciones de compra) -->
+        <div class="nav-baja-item dropdown">
+            <a href="#" class="nav-baja-link">
+                <i class="fas fa-gavel"></i> Políticas
+                <i class="fas fa-chevron-down dropdown-arrow"></i>
+            </a>
+            <div class="dropdown-menu">
+                <a href="#"><i class="fas fa-file-signature"></i> Términos y condiciones</a>
+                <a href="#"><i class="fas fa-shopping-bag"></i> Condiciones de compra</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="shop-container">
+  <div class="breadcrumb" id="breadcrumb"></div>
+
+  <div class="product-layout" id="productLayout"></div>
+  <div class="description-section" id="descriptionSection"></div>
+  <div class="similar-section" id="similarSection"></div>
+  <div class="footer-legit">🔐 Compra 100% segura · Datos encriptados · Tienda verificada · Envíos con seguimiento</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
